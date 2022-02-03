@@ -1,0 +1,148 @@
+@font-face {
+    font-family: "Roboto Medium";
+    src: url('./fonts/Roboto/Roboto-Medium.ttf');
+}
+
+@font-face {
+    font-family: "Roboto Regular";
+    src: url('./fonts/Roboto/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: "Roboto Light";
+    src: url('./fonts/Roboto/Roboto-Light.ttf');
+}
+@font-face {
+    font-family: "Ubuntu Medium";
+    src: url('./fonts/Ubuntu/Ubuntu-Medium.ttf');
+}
+@font-face {
+    font-family: "Ubuntu Regular";
+    src: url('./fonts/Ubuntu/Ubuntu-Regular.ttf');
+}
+
+@font-face {
+    font-family: "LibreBaskerville";
+    src: url('./fonts/LibreBaskerville/LibreBaskerville-Regular.ttf');
+}
+
+:root{
+    --red:#ff3838;
+}
+*{
+    font-family: "Roboto Regular",sans-serif;
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+*::selection{
+    background:var(--red) ;
+    color: #fff;
+}
+html{
+    font-size: 62.5%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+body{
+    background: #f7f7f7;
+
+}
+
+header{
+    position: fixed;
+    top: 0;left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 1rem 9%;//2rem
+    box-shadow: 0.1rem 1rem 1rem rgba(0,0,0,0.1);
+    
+}
+
+.navigable{
+    color: black;
+}
+header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color:#666;
+}
+
+header .logo i{
+font-size: 3rem;
+padding-right: .5rem;
+color:var(--red);
+}
+header .navbar a {
+    font-size: 1.6rem;
+    margin-left: 2rem;
+    color: #666;
+    &:hover{
+        color:var(--red);
+        
+    }
+}
+
+#menu-bar{
+    font-size: 2.4rem;
+    cursor: pointer;
+    border: 0.1rem solid rgb(190, 184, 184);
+    border-radius: .3rem;
+    padding :.3rem 1rem;
+    display: none;
+    
+}
+#brand{
+ font-family: "Ubuntu Regular";
+}
+
+/* Media Query*/
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 2rem;
+    }
+}
+@media(max-width:768px){
+    #menu-bar{
+        display: initial;
+    }
+
+    header .navbar{
+        position: absolute;
+        top:100%;left:0;right: 0;
+        background: #f7f7f7;
+        border-top: 0.1rem solid rgba(0,0,0,0.1);
+        clip-path: polygon(0,100% 0,100% 0,0 0);
+    }
+    header .navbar .active{
+        clip-path: polygon(0 0,100% 100%,0% 100%);
+       
+    }
+
+
+    header .navbar a{
+        margin:1.5rem;
+        padding:1.5rem; //1.5
+        display: block;
+        border:.2rem solid rgba(0,0,0,0.1);
+        border-left: .5rem solid var(--red);
+        background: #fff;
+    }
+
+}
+
+@media(max-width:400px){
+    html{
+        font-size: 50%;
+    }
+
+}

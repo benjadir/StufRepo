@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="/res/fontawesome-free-5.15.4-web/css/all.css">
+    <title>Shop page</title>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo" >Fashion Style</a>
+       
+        <nav class="navbar" id="nav">
+            <a href="#collections" >collections</a>
+            <a href="#Men" >Men</a>
+            <a href="#Women" >Women</a>
+            <a href="#about" >about</a>
+            <a href="#contact" >contact</a>
+        </nav>
+        <div class="rightnav" >
+            <a href="#shopping" ><i class="fas fa-shopping-cart"></i></a>
+            <a href="#shopping" ><i class="fas fa-user-alt"></i></a>
+         <div id="menubar" class="fas fa-bars" role="button"></div>
+           
+        </div>
+        
+    </header>
+    <br><br><br>
+    <div class="container">
+   <div class="col-1" ">
+      <div class="card1" style="margin-bottom:.3rem;">
+          <img  id="mainImg" src="/img/spadri-003.PNG" title="Nike Zoom" alt="nike zom gf-5">
+          <br><br>
+          <div class="list">
+              <div class="grid1" ><img src="/img/spadri-002.PNG" class="uStyle" id="img1"></div>
+              <div class="grid1" ><img src="/img/spadri-003.PNG" class="uStyle" id="img2"></div>
+              <div class="grid1" ><img src="/img/spadri-004.PNG" class="uStyle" id="img3"></div>
+              <div class="grid1" ><img src="/img/spadri-005.PNG" class="uStyle" id="img4"></div>
+          </div>
+      </div>
+   </div>
+   <div class="col-2" style>
+    <div class="card2">
+        <div class="content">
+        <h3>Fahion style Company</h3><br>
+        <h2>Quality Assurance Best Sellers </h2>
+        <br>
+        <p style="color: grey;font-size: 80%;line-height: 1.4rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nobis ratione animi soluta ex nulla deleniti omnis maxime accusamus libero explicabo in sequi molestiae quas tempore.!</p>
+       <br>
+        <div class="price">
+        <H3>$5.76</H3>
+        <br>
+        <p class="percent">-70%</p>
+        
+    </div><br>
+    <h5 style="color: grey;">$15.20</h5>
+    <br><br>
+</div>
+    <form>
+        <div class="form-group">
+            <button class="btn-plus" id="btnplus"><i class="fas fa-plus" ></i></button>
+            <input id="myinput" type="text" class="theInput">
+            <button class="btn-minus" id="btnminus"><i class="fas fa-minus"></i></button>
+            <button class="btn" id="sendbtn" onclick="Add()"><i class="fas fa-cart-plus"></i>add to card</button>
+        </div>
+    </form>
+    </div>
+   </div>
+
+    </div>
+    <script src="/Templates/main.js"></script>
+    <!---<script src="/Templates/grid1.js"/>-->  
+</body>
+</html>
